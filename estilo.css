@@ -1,0 +1,298 @@
+/* General Setup */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #faf7f5;
+  color: #333333;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Hero / Header Section */
+.hero {
+  background: linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35)), url('https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&w=1200&q=80') center/cover no-repeat;
+  color: #ffffff;
+  text-align: center;
+  padding: 80px 20px 60px;
+}
+
+.logo {
+  font-size: 3rem;
+  letter-spacing: 6px;
+  font-weight: 300;
+  margin-bottom: 10px;
+}
+
+.tagline {
+  font-size: 0.95rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 25px;
+  opacity: 0.9;
+}
+
+.hero-info p {
+  font-size: 0.9rem;
+  margin-bottom: 5px;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 25px;
+  padding: 12px 30px;
+  background-color: #ffffff;
+  color: #333333;
+  text-decoration: none;
+  font-weight: 600;
+  letter-spacing: 1px;
+  border-radius: 4px;
+  text-transform: uppercase;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background-color: #e5d3c8;
+}
+
+/* Price Sections */
+.price-section {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 35px 25px;
+  margin: 40px 0;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
+}
+
+.dark-card {
+  background-color: #2b3a32;
+  color: #ffffff;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 1.5rem;
+  letter-spacing: 4px;
+  margin-bottom: 25px;
+  font-weight: 500;
+}
+
+/* Manicure Table */
+.table-responsive {
+  overflow-x: auto;
+}
+
+.price-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.price-table th, .price-table td {
+  padding: 12px 8px;
+  border-bottom: 1px solid #eeeeee;
+  font-size: 0.9rem;
+}
+
+.price-table th {
+  font-weight: 500;
+  color: #777777;
+}
+
+.price-table td small {
+  display: block;
+  color: #888888;
+}
+
+/* Price Lists (Pedicure, Pestanas, Sobrancelhas) */
+.price-list, .extras-list {
+  list-style: none;
+}
+
+.price-list li, .extras-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+  font-size: 0.95rem;
+}
+
+.dark-card .price-list li {
+  border-bottom-color: rgba(255, 255, 255, 0.1);
+}
+
+.price-list li small {
+  color: #777777;
+}
+
+.dark-card .price-list li small {
+  color: #cccccc;
+}
+
+.extras-list {
+  margin-top: 15px;
+}
+
+/* Guarantee Box */
+.guarantee-box {
+  margin-top: 30px;
+  background-color: #f7ede8;
+  padding: 15px;
+  border-radius: 6px;
+  text-align: center;
+  font-size: 0.85rem;
+  color: #555555;
+}
+
+.dark-card .guarantee-box {
+  background-color: rgba(255, 255, 255, 0.08);
+  color: #dddddd;
+}
+
+/* Formas de Pagamento */
+.payment-section {
+  text-align: center;
+  margin: 50px 0;
+}
+
+.payment-section h3 {
+  letter-spacing: 3px;
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  font-weight: 500;
+}
+
+.payment-methods {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.payment-card {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 12px;
+  width: 130px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.03);
+}
+
+.mbway-icon {
+  display: inline-block;
+  border: 2px solid #c0392b;
+  color: #c0392b;
+  font-weight: bold;
+  padding: 4px 8px;
+  border-radius: 4px;
+  margin-bottom: 8px;
+}
+
+.cash-icon {
+  font-size: 1.8rem;
+}
+
+/* Contact Section */
+.contact-section {
+  background-color: #ffffff;
+  padding: 40px 20px;
+  border-radius: 12px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.contact-section h2 {
+  letter-spacing: 3px;
+  margin-bottom: 15px;
+  font-weight: 500;
+}
+
+.contact-section p {
+  margin: 8px 0;
+  font-size: 0.95rem;
+}
+
+.booking-info {
+  margin-top: 15px !important;
+  font-weight: 600;
+  color: #8b5e43;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  font-size: 0.8rem;
+  color: #888888;
+  border-top: 1px solid #e5e5e5;
+}
+
+/* Responsive styles */
+@media (max-width: 600px) {
+  .logo {
+    font-size: 2.2rem;
+  }
+  .tagline {
+    font-size: 0.8rem;
+  }
+  .price-section {
+    padding: 25px 15px;
+  }
+}
+.booking-section {
+  background-color: #ffffff;
+  padding: 40px 25px;
+  border-radius: 12px;
+  margin: 40px 0;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
+}
+
+.booking-section h2 {
+  text-align: center;
+  letter-spacing: 3px;
+  margin-bottom: 25px;
+  font-weight: 500;
+}
+
+.booking-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.booking-form label {
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.booking-form input,
+.booking-form select {
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-family: inherit;
+  font-size: 0.95rem;
+}
+
+.btn-submit {
+  background-color: #2b3a32;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.btn-submit:hover {
+  background-color: #1e2923;
+}
